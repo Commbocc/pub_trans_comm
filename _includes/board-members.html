@@ -1,0 +1,35 @@
+<div id="board-members">
+	{% for board_member in site.data.board_members %}
+	<div class="media">
+		<div class="media-left">
+			<img class="media-object img-thumbnail" width="115" src="{{ site.baseurl }}/images/board_members/{{ board_member.name }}.jpg" alt="{{ board_member.name }}">
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				{{ board_member.name }}
+				{% if board_member.title %}
+				<small>{{ board_member.title }}</small>
+				{% endif %}
+			</h4>
+
+			<ul class="list-unstyled">
+				{% if board_member.board_title %}<li>{{ board_member.board_title }}</li>{% endif %}
+				{% if board_member.board_title_2 %}<li>{{ board_member.board_title_2 }}</li>{% endif %}
+				{% if board_member.phone %}<li>{{ board_member.phone }}</li>{% endif %}
+				{% if board_member.email %}<li><a href="mailto:{{ board_member.email }}">Email</a></li>{% endif %}
+			</ul>
+
+			{% if board_member.aides %}
+			<h5>Aides</h5>
+			<ul>
+				{% for aide in board_member.aides %}
+				<li><a href="mailto:{{ aide.email }}">{{ aide.name }}</a></li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+
+
+		</div>
+	</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,67 @@
+- name: Victor Crist
+  title: Hillsborough County Commissioner District 2
+  board_title: PTC Board Chair
+  board_title_2: Ex Officio for Rules & Policy Committee and Finance & Audit Committee
+  phone: 813-272-5452
+  email:
+  aides:
+    - name: Craig Jewesak
+      email: jewesakc@hillsboroughcounty.org
+
+- name: Guido Maniscalco
+  title: Tampa City Councilman District 6
+  board_title: PTC Board Secretary
+  board_title_2: Rules & Policy Committee Member
+  phone: 813-274-7071
+  email:
+  aides:
+    - name: Carrie Henriquez
+      email: carrie.henriquez@tampagov.net
+
+- name: David Pogorilich
+  title: Temple Terrace Councilman District 5
+  board_title: PTC Board Vice-Chairman
+  board_title_2: Rules & Policy Committee Member
+  phone: 813-514-3568
+  email: dpogorilich@templeterrace.com
+
+- name: Ken Hagan
+  title: Hillsborough County Commissioner District 5
+  board_title: PTC Board Assistant Treasurer/Secretary
+  board_title_2: Finance & Audit Committee Member
+  phone: 813-272-5725
+  email:
+  aides:
+    - name: Steve McGlocklin
+      email: mcglocklins@hillsboroughcounty.org
+    - name: Jim Taylor
+      email: taylorj@hillsboroughcounty.org
+
+- name: Frank Reddick
+  title: Tampa City Councilman District 5
+  board_title: PTC Board Member
+  board_title_2: Finance & Audit Committee Member
+  phone: 813-274-8189
+  email:
+  aides:
+    - name: Cedric McCray
+      email: cedric.mccray@tampagov.net
+
+- name: Billy Keel
+  title: Plant City Commissioner Group 1
+  board_title: PTC Board Member
+  board_title_2: Rules & Policy Committee Member
+  phone: 813-659-4200
+  email: bkeel@plantcitygov.com
+
+- name: Al Higginbothom
+  title: Hillsborough County Commissioner District 7
+  board_title: PTC Board Member
+  board_title_2: Finance & Audit Committee Member
+  phone: 813-272-5735
+  email:
+  aides:
+    - name: Eli Rodriguez
+      email: rodriguezem@hillsboroughcounty.org
+    - name: Matthew Henderson
+      email: hendersonm@hillsboroughcounty.orhg
