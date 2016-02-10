@@ -1,23 +1,18 @@
 ---
-layout: default
+layout: default-no-container
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="container">
+	<p class="lead">
+		Public Transportation Commission (PTC) is an independent Special District created by a Special Act. The Commission regulates vehicles for-hire as defined in the Special Act and these include taxicabs, limousines, vans, basic life support ambulances and those wrecker services that support government agencies such as the law enforcement agencies in Hillsborough County and non-consensual towing (private property impounds).
+	</p>
+	<p>
+		Customer Service hours are between 8:30 AM to 4:30 PM, Monday-Friday (excluding Federal holidays).  Also, no vehicle inspections during inclement weather.
+	</p>
+	<p>
+		<strong>
+			We are now offering free notary service for all PTC related items and we now also accept credit or debit cards for new PVDL applications or renewals.
+		</strong>
+	</p>
 
 </div>
