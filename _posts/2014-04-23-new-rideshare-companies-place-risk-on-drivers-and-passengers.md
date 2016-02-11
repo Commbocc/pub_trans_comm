@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Rideshare Companies Place Risk on Drivers and Passengers"
-date:   2015-02-13
+date:   2014-04-23
 ---
 
 In recent weeks, we have come into contact with individuals within our community who are using their personal vehicles to provide for-hire public transportation services.
