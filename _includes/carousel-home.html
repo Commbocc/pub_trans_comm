@@ -2,9 +2,9 @@
 
 	<div class="panel panel-default">
 
-		<div class="carousel-inner" role="listbox">
+		<div class="carousel-inner auto-height" role="listbox">
 			{% for post in site.posts limit: 3 %}
-			<div class="item {% if forloop.index0 == 0 %}active{% endif %}">
+			<div class="item auto-height-elem {% if forloop.index0 == 0 %}active{% endif %}">
 				<a href="{{ post.url | prepend: site.baseurl }}">
 					<div class="embed-responsive embed-responsive-16by9 news-image">
 						{% if post.image %}
