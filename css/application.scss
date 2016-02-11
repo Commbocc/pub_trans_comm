@@ -36,26 +36,6 @@
 	}
 }
 
-// .btn-outlined {
-// 	position:relative;
-//
-// 	&.btn-default:before { border: 1px solid #e7e7e7; }
-// 	&.btn-primary:before { border: 1px solid $brand-primary; }
-// 	&.btn-danger:before { border: 1px solid $brand-danger; }
-// 	&.btn-warning:before { border: 1px solid $brand-warning; }
-// 	&.btn-info:before { border: 1px solid $brand-info; }
-// 	&.btn-success:before { border: 1px solid $brand-success; }
-//
-// 	&:before {
-// 		content: " ";
-// 		position: absolute;
-// 		top: -5px;
-// 		left: -5px;
-// 		right: -5px;
-// 		bottom: -5px;
-// 	}
-// }
-
 .news-image {
 	position: relative;
 	// margin-bottom: -10px;
@@ -68,4 +48,5 @@
 		transform: translateX(-50%) translateY(-50%);
 		color: #fff;
 	}
+
 }
