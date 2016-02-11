@@ -12,7 +12,19 @@ layout: default
 
 	<div id="page-content" class="row">
 		<div class="col-sm-8">
+
+			{% if page.image %}
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="embed-responsive embed-responsive-16by9 news-image thumbnail">
+						<img src="{% if page.remote_img %}{{ page.image }}{% else %}{{ '/images/'+page.image | prepend: site.baseurl }}{% endif %}" class="img-responsive" alt="{{ page.title }}">
+					</div>
+				</div>
+			</div>
+			{% endif %}
+
 			{{ content }}
+
 		</div>
 		<div class="col-sm-4">
 			{% include sidebar-home.html %}
