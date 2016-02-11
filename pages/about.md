@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Board Members & Staff
-permalink: /board-staff/
+title: About the Hillsborough County PTC
+permalink: /about/
 ---
+
+<p class="lead">
+	Public Transportation Commission (PTC) is an independent Special District created by a Special Act. The Commission regulates vehicles for-hire as defined in the Special Act and these include taxicabs, limousines, vans, basic life support ambulances and those wrecker services that support government agencies such as the law enforcement agencies in Hillsborough County and non-consensual towing (private property impounds).
+</p>
 
 ### Board Members
 
@@ -11,3 +15,5 @@ The Public Transportation Commission Board meets monthly to regulate and supervi
 {% include board-members.html %}
 
 ### Staff
+
+{% include staff-members.html %}

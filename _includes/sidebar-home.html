@@ -1,6 +1,8 @@
+{% include calendar-list.html %}
+
 <p>
 	<div class="btn-group btn-block" role="group" aria-label="Agendas">
-		<a href="#" class="col-xs-9 btn btn-danger btn-md">
+		<a href="#" class="col-xs-9 btn btn-danger btn-md active">
 			Current PTC Agenda
 		</a>
 		<a href="#" class="col-xs-3 btn btn-danger btn-md" title="Agenda Archive">
@@ -10,7 +12,7 @@
 </p>
 <p>
 	<div class="btn-group btn-block" role="group" aria-label="Agendas">
-		<a href="#" class="col-xs-9 btn btn-primary btn-md">
+		<a href="#" class="col-xs-9 btn btn-primary btn-md active">
 			Latest PTC Minutes
 		</a>
 		<a href="#" class="col-xs-3 btn btn-primary btn-md" title="Minutes Archive">
@@ -20,7 +22,7 @@
 </p>
 <p>
 	<div class="btn-group btn-block" role="group" aria-label="Agendas">
-		<a href="#" class="col-xs-9 btn btn-success btn-md">
+		<a href="#" class="col-xs-9 btn btn-success btn-md active">
 			Latest PTC Caption
 		</a>
 		<a href="#" class="col-xs-3 btn btn-success btn-md" title="Caption Archive">
@@ -28,3 +30,13 @@
 		</a>
 	</div>
 </p>
+
+<div class="panel panel-default">
+	{% include map.html %}
+	<div class="panel-body">
+		<p class="lead text-center">
+			P: 813-350-6878<br>
+			F: 813-350-6877
+		</p>
+	</div>
+</div>

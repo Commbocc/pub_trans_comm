@@ -22,8 +22,8 @@ github_username: ""
 # Build settings
 markdown: kramdown
 
-paginate: 10
-paginate_path: "news/:num"
+paginate: 2
+paginate_path: "/info/:num"
 
 gems:
  - jekyll-coffeescript

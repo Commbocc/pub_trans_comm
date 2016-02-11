@@ -1,6 +1,62 @@
 ---
 ---
 
-// @import "bootswatch/superhero/variables";
+@import "bootswatch/yeti/variables";
 @import "bootstrap";
-// @import "bootswatch/superhero/bootswatch";
+@import "bootswatch/yeti/bootswatch";
+
+.jumbotron {
+	background-image: url('http://cache4.asset-cache.net/xc/465964188.jpg?v=2&c=IWSAsset&k=2&d=Oy7kAusUxkiZJkAVUDvYFJq12PlP4AtDAH7Nw8iPpy5lUKEWZ_sVYGDywYgTEIuS0');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	color: #fff;
+	text-shadow: 1px 1px #111;
+
+}
+
+#carousel-info {
+	.carousel-indicators {
+		bottom: 45px;
+		li {
+			border-color: $brand-primary;
+		}
+		.active {
+			background-color: $brand-primary;
+		}
+	}
+}
+
+// .btn-outlined {
+// 	position:relative;
+//
+// 	&.btn-default:before { border: 1px solid #e7e7e7; }
+// 	&.btn-primary:before { border: 1px solid $brand-primary; }
+// 	&.btn-danger:before { border: 1px solid $brand-danger; }
+// 	&.btn-warning:before { border: 1px solid $brand-warning; }
+// 	&.btn-info:before { border: 1px solid $brand-info; }
+// 	&.btn-success:before { border: 1px solid $brand-success; }
+//
+// 	&:before {
+// 		content: " ";
+// 		position: absolute;
+// 		top: -5px;
+// 		left: -5px;
+// 		right: -5px;
+// 		bottom: -5px;
+// 	}
+// }
+
+.news-image {
+	position: relative;
+	margin-bottom: -10px;
+	background: $brand-primary;
+
+	img, i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		color: #fff;
+	}
+}

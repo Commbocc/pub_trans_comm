@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse visible-xs-block">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -8,11 +8,8 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+			<a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
 		</div>
-
-
-
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,8 +26,48 @@
 
 			</ul>
 
-			<!-- <ul class="nav navbar-nav navbar-right"></ul> -->
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">Facebook</a>
+				</li>
+				<li>
+					<a href="#">Twitter</a>
+				</li>
+			</ul>
 
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
+</nav>
+
+<nav class="container hidden-xs">
+	<div class="page-header" style="margin-top: 15px;">
+
+		<div class="row">
+			<div class="col-sm-3 col-md-2">
+				<a href="{{ '/' | prepend: site.baseurl }}">
+					<img src="{{ '/images/logo.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="{{ site.title }}" />
+				</a>
+			</div>
+			<div class="col-sm-9 col-md-10">
+
+				<h1>Hillsborough County {{ site.title }}</h1>
+
+				<p class="pull-right">
+					<a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+					<a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+				</p>
+
+				<ul class="nav nav-pills">
+					{% for link in site.data.menu_nav %}
+					{% if link.title %}
+					<li class="{% if link.href == page.url %}active{% endif %}">
+						<a href="{{ link.href | prepend: site.baseurl }}" class="{{ link.class }}">{{ link.title }}</a>
+					</li>
+					{% endif %}
+					{% endfor %}
+				</ul>
+
+			</div>
+		</div>
+	</div>
 </nav>

@@ -1,0 +1,40 @@
+<div id="carousel-info" class="carousel slide" data-ride="carousel">
+
+	<div class="panel panel-default">
+
+		<div class="carousel-inner" role="listbox">
+			{% for post in site.posts limit: 3 %}
+			<div class="item {% if forloop.index0 == 0 %}active{% endif %}">
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					<div class="embed-responsive embed-responsive-16by9 news-image">
+						{% if post.image %}
+						<img src="{% if post.remote_img %}{{ post.image }}{% else %}{{ '/images/'+post.image | prepend: site.baseurl }}{% endif %}" class="img-responsive" alt="{{ post.title }}">
+						{% else %}
+						<i class="fa fa-picture-o fa-5x"></i>
+						{% endif %}
+					</div>
+				</a>
+				<div class="panel-body">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.excerpt }}</p>
+					<p class="text-center">
+						<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-sm btn-outlined" role="button">Continue Reading</a>
+					</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			{% for post in site.posts limit: 3 %}
+			<li data-target="#carousel-info" data-slide-to="{{forloop.index0}}" class="{% if forloop.index0 == 0 %}active{% endif %}"></li>
+			{% endfor %}
+		</ol>
+
+		<footer class="panel-footer">
+			<a href="{{ '/info/' | prepend: site.baseurl }}" class="btn btn-default btn-sm btn-block">Browse All Information</a>
+		</footer>
+	</div>
+
+</div>
