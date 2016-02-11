@@ -9,7 +9,7 @@ $ ->
 		$('.auto-height').each ->
 			$autoHeight = $(this).find('.auto-height-elem')
 			$autoHeight.each ->
-				currentTallest = ($(this).height() + 15) if $(this).height() > currentTallest
+				currentTallest = $(this).height() if $(this).height() > currentTallest
 				return
 			$autoHeight.each ->
 				$(this).height 'auto'
