@@ -16,8 +16,8 @@ baseurl: "/pub_trans_comm"
 
 url: ""
 
-twitter_username: ""
-github_username: ""
+facebook: "https://www.facebook.com/PublicTransportationCommission?_rdr=p"
+twitter: "https://twitter.com/ptchills"
 
 # Build settings
 markdown: kramdown
