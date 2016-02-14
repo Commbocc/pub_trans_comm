@@ -3,6 +3,19 @@
 
 $ ->
 
+	# show #nav-scroller on scroll down
+	$(window).scroll ->
+		console.log $(this).width()
+		$scroller = $('#nav-scroller')
+		if $(this).scrollTop() > 200 && $(this).width() > 767
+			$scroller.removeClass('visible-xs-block').hide().fadeIn(500) if $scroller.hasClass('visible-xs-block')
+		else
+			unless $scroller.hasClass('visible-xs-block')
+				$scroller.fadeOut 500, ->
+					$scroller.addClass('visible-xs-block')
+					return
+		return
+
 	# auto height
 	resizeAutoHeights = ->
 		currentTallest = 0

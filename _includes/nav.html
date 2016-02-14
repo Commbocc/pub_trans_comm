@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse visible-xs-block">
+<nav id="nav-scroller" class="navbar navbar-inverse navbar-fixed-top visible-xs-block">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -27,11 +27,12 @@
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
+				 <li class="nav-divider"></li>
 				<li>
-					<a href="{{ site.facebook }}" target="_blank">Facebook</a>
+					<a href="{{ site.facebook }}" target="_blank"><i class="fa fa-fw fa-facebook"></i> <span class="visible-sm-inline visible-xs-inline">&nbsp; Facebook</span></a>
 				</li>
 				<li>
-					<a href="{{ site.twitter }}" target="_blank">Twitter</a>
+					<a href="{{ site.twitter }}" target="_blank"><i class="fa fa-fw fa-twitter"></i> <span class="visible-sm-inline visible-xs-inline">&nbsp; Twitter</span></a>
 				</li>
 			</ul>
 
@@ -39,7 +40,7 @@
 	</div><!-- /.container-fluid -->
 </nav>
 
-<nav class="container hidden-xs">
+<nav id="nav-main" class="container hidden-xs">
 	<div class="page-header" style="margin-top: 15px;">
 
 		<div class="row">

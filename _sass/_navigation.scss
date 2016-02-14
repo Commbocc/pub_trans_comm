@@ -1,0 +1,33 @@
+@media (max-width: $screen-xs-max) {
+	body {
+		margin-top: 60px;
+	}
+}
+
+#nav-main {
+
+	margin: 10px 0 20px;
+
+	li {
+		border-left: solid 2px $brand-warning;
+	}
+
+	li > a {
+		color: $brand-primary;
+		text-align: left;
+		line-height: 1.2;
+		font-weight: bold;
+
+		&:hover {
+			color: $brand-info;
+			background-color: #fff;
+		}
+
+	}
+
+	li.active > a {
+		color: $brand-info;
+		background-color: #fff;
+	}
+
+}
