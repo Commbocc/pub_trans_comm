@@ -16,6 +16,8 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	{% if site.google_analytics %}{% include analytics.html %}{% endif %}
+
 	{% for asset in site.data.assets.css %}
 	<link href="{{site.baseurl}}/css/{{asset.src}}" rel="stylesheet">
 	{% endfor %}
