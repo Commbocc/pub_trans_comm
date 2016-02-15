@@ -2,8 +2,7 @@
 layout: post
 title:  "Getting Towed: How To Avoid It & What To Do If It Happens To You"
 date:   2016-01-04
-image: http://intekaiacademy.org/sites/default/files/img-3.jpg
-remote_img: true
+image: 2016-01-04-getting-towed-how-to-avoid-it-what-to-do-if-it-happens-to-you.jpg
 ---
 
 How can you be sure your vehicle won’t be towed when you park in an unfamiliar area? And do you have any recourse if you think you’ve been towed unfairly?

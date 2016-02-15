@@ -8,7 +8,7 @@
 				<a href="{{ post.url | prepend: site.baseurl }}">
 					<div class="embed-responsive embed-responsive-16by9 news-image">
 						{% if post.image %}
-						<img src="{% if post.remote_img %}{{ post.image }}{% else %}{{ '/images/'+post.image | prepend: site.baseurl }}{% endif %}" class="img-responsive" alt="{{ post.title }}">
+						<img src="{% if post.remote_img %}{{ post.image }}{% else %}{{ '/images/posts/' | prepend: site.baseurl }}{{ post.image }}{% endif %}" class="img-responsive" alt="{{ post.title }}">
 						{% else %}
 						<i class="fa fa-picture-o fa-5x"></i>
 						{% endif %}

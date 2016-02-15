@@ -2,8 +2,7 @@
 layout: post
 title:  "What are the facts about the situation with Uber and Lyft?"
 date:   2015-09-15
-image: http://derekwwyatt.com/wp-content/uploads/2015/05/uber-vs-lyft-1080x675.png
-remote_img: true
+image: 2015-09-18-what-are-the-facts-about-the-situation-with-uber-and-lyft.png
 ---
 
 What do you think when you hear of the Hillsborough County Public Transportation Commission (PTC)? Do you immediately think about a taxicab? Maybe you recall a news article you read having something to do with the PTC and companies like Uber and Lyft.

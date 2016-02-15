@@ -5,6 +5,17 @@ title: Additional Information
 
 {% for post in paginator.posts limit: nil offset: 0 %}
 <div class="media">
+	<div class="media-left">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+			<div class="media-object embed-responsive embed-responsive-16by9 news-image" style="width: 100px;">
+				{% if post.image %}
+				<img class="img-responsive center-block" src="{% if post.remote_img %}{{ post.image }}{% else %}{{ '/images/posts/' | prepend: site.baseurl }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
+				{% else %}
+				<i class="fa fa-picture-o"></i>
+				{% endif %}
+			</div>
+		</a>
+	</div>
 	<div class="media-body">
 		<h4 class="media-heading">
 			<a href="{{ post.url | prepend: site.baseurl }}">
@@ -14,6 +25,9 @@ title: Additional Information
 				{{ post.date | date: "%b %-d, %Y" }}
 			</small>
 		</h4>
+		<p>
+			{{ post.path }}
+		</p>
 		<p>
 			{{ post.excerpt }}
 		</p>
