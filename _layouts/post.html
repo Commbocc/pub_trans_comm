@@ -1,17 +1,25 @@
 ---
 layout: default
 ---
-<article class="post">
 
-	<header class="page-header">
-		<h2>
-			{{ page.title }}<br>
-			<small>{{ page.date | date: "%b %-d, %Y" }}</small>
-		</h2>
-	</header>
+<ol class="breadcrumb hidden-xs">
+	<li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+	<li><a href="{{ '/info/' | prepend: site.baseurl }}">Additional Information</a></li>
+	<li class="active">
+		{{ page.title }}
+	</li>
+</ol>
+
+<article class="post">
 
 	<div id="page-content" class="row">
 		<div class="col-sm-8">
+
+			<h3>
+				{{ page.title }}<br>
+				<small>{{ page.date | date: "%b %-d, %Y" }}</small>
+			</h3>
+			<hr>
 
 			{% if page.image %}
 			<div class="row">
@@ -27,6 +35,14 @@ layout: default
 
 		</div>
 		<div class="col-sm-4">
+
+			<p>
+				<a href="#" class="btn btn-default">
+					<i class="fa fa-facebook"></i>
+				</a> &nbsp; Share this...
+
+			</p>
+
 			{% include sidebar-home.html %}
 		</div>
 	</div>
