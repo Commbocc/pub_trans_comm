@@ -5,7 +5,6 @@ $ ->
 
 	# show #nav-scroller on scroll down
 	$(window).scroll ->
-		console.log $(this).width()
 		$scroller = $('#nav-scroller')
 		if $(this).scrollTop() > 200 && $(this).width() > 767
 			$scroller.removeClass('visible-xs-block').hide().fadeIn(500) if $scroller.hasClass('visible-xs-block')
