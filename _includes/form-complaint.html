@@ -1,0 +1,122 @@
+<form>
+
+	<legend>Your Information</legend>
+
+	<div class="form-group">
+		<label for="name">Your name (First & Last)</label>
+		<input type="text" class="form-control" id="name" placeholder="Name" required>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label for="email">Email address</label>
+				<input type="email" class="form-control" id="email" placeholder="Email" required>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label for="phone">Daytime Contact Number</label>
+				<input type="text" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" required>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="address1">Address</label>
+		<input type="text" class="form-control" id="address1" placeholder="">
+	</div>
+	<div class="form-group">
+		<label for="address2">Address <small>(Continued)</small></label>
+		<input type="text" class="form-control" id="address2" placeholder="">
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label for="city">City</label>
+				<input type="text" class="form-control" id="city" placeholder="City">
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label for="state">State</label>
+				<input type="text" class="form-control" id="state" placeholder="FL" value="FL">
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="zip">Zip</label>
+				<input type="number" class="form-control" id="zip" placeholder="Zip" min="0">
+			</div>
+		</div>
+	</div>
+
+	<legend>Your Complaint</legend>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label for="">Complaint Type</label>
+				<select multiple required class="form-control">
+					<option>Driver</option>
+					<option>Company</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label for="">Industry Type</label>
+				<select multiple required class="form-control">
+					<option>Taxi</option>
+					<option>Limousine</option>
+					<option>Wrecker</option>
+					<option>Handicab</option>
+					<option>Ambulance</option>
+					<option>Van</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="form-group">
+				<label for="">Date/Time/Location of Complaint (list address if possible)</label>
+				<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="form-group">
+				<label for="">Company name or other identifying information</label>
+				<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="form-group">
+				<label for="">Vehicle license plate/permit number or description</label>
+				<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="form-group">
+				<label for="">Driver name/permit number or other information</label>
+				<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="">Description of Incident</label>
+		<textarea class="form-control" rows="4"></textarea>
+		<span id="helpBlock" class="help-block">
+			Include as much detail as possible about the incident.
+		</span>
+	</div>
+
+
+	<p>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</p>
+
+</form>
